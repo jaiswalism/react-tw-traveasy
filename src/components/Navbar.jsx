@@ -32,7 +32,7 @@ const Navbar = () => {
         {/* Hamburger */}
 
         <div onClick={handleNav} className='z-10 md:hidden'>
-            {nav ? <AiOutlineClose size={20}/> : <HiOutlineMenuAlt4 size={20} />}
+            {nav ? <AiOutlineClose size={20} className='text-black'/> : <HiOutlineMenuAlt4 size={20} />}
         </div>
 
         {/* Mobile Menu */}
