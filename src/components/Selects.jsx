@@ -3,7 +3,6 @@ import BoraBora from '../Assets/borabora.jpg'
 import BoraBora2 from '../Assets/borabora2.jpg'
 import Maldives from '../Assets/maldives.jpg'
 import Maldives2 from '../Assets/maldives2.jpg'
-import KeyWest from '../Assets/keywest.jpg'
 import SelectsCard from './SelectsCard'
 
 const Selects = () => {
