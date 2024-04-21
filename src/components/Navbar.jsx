@@ -18,16 +18,16 @@ const Navbar = () => {
             {/* <h1 onClick={handleNav} className={logo ? 'hidden' : 'block'}>BEACHES.</h1> */}
             <h1 className='hover:text-indigo-100 cursor default'>BEACHES.</h1>
         </div>
-            <ul className='hidden md:flex'>
-                <li>Home</li>
-                <li>Destinations</li>
-                <li>Travel</li>
-                <li>View</li>
-                <li>Book</li>
+            <ul className='hidden *:cursor-pointer md:flex'>
+                <li className='overline hover:overline hover:text-indigo-100'>Home</li>
+                <li className='hover:overline hover:text-indigo-100'>Destinations</li>
+                <li className='hover:overline hover:text-indigo-100'>Travel</li>
+                <li className='hover:overline hover:text-indigo-100'>View</li>
+                <li className='hover:overline hover:text-indigo-100'>Book</li>
             </ul>
         <div className='hidden md:flex'>
-        <BiSearch className='mr-2' size={20} />
-        <BsPerson size={20} />
+        <BiSearch className='mr-2 cursor-pointer' size={20} />
+        <BsPerson className='cursor-pointer' size={20} />
         </div>
 
         {/* Hamburger */}
