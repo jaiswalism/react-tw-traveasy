@@ -1,6 +1,7 @@
 import React from "react";
 import {
   FaFacebook,
+  FaGithub,
   FaInstagram,
   FaPinterest,
   FaTwitter,
@@ -9,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="w-full bg-gray-100 py-16">
+    <div className="w-full bg-gray-100 pt-16">
       <div className="max-w-[1240px] mx-auto flex flex-col px-4">
         <div className="sm:flex text-center justify-between items-center">
           <h1>BEACHES.</h1>
@@ -37,6 +38,12 @@ const Footer = () => {
             <li>Book</li>
           </ul>
         </div>
+
+        <div className="flex py-6 justify-between px-4">
+            <p className="font-semibold text-sm text-[var(--secondary-dark)]">Made by Shyam Jaiswal</p>
+            <a href="https://github.com/jaiswalism"><FaGithub size={25} className="icon" /></a> 
+        </div>
+
       </div>
     </div>
   );

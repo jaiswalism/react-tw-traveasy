@@ -40,6 +40,6 @@
     }
 
     .icon{
-        @apply text-2xl cursor-pointer hover:text-[var(--secondary-light)]
+        @apply text-2xl cursor-pointer hover:text-[var(--secondary-dark)]
     }
 }
