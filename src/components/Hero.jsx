@@ -16,9 +16,9 @@ const Hero = () => {
       <div className="absolute top-0 w-full h-full flex flex-col justify-center text-center text-white p-4">
         <h1>First Class Travel</h1>
         <h2 className="py-4">Top 1% Locations Worldwide</h2>
-        <form action="" className="flex justify-between items-center max-w-[700px] mx-auto w-full border rounded-md p-1 text-black bg-gray-100/90">
+        <form action="" className="flex box-content justify-between items-center max-w-[700px] mx-auto w-full border rounded-md p-1 text-black bg-gray-100/90">
             <div>
-                <input className="bg-transparent w-[300px] sm:w-[400px] font-[Poppins] focus:outline-none" type="text" placeholder="Search Destinations" />
+                <input className="pl-2 bg-transparent w-[300px] sm:w-[400px] font-[Poppins] focus:outline-none" type="text" placeholder="Search Destinations" />
             </div>
             <div>
                 <button><AiOutlineSearch size={20} className="icon" style={{color: '#fff'}}/></button>
