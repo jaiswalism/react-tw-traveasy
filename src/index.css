@@ -5,14 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --primary-dark: #3B2667;
-    --primary-light: #BC78EC;
-    --secondary-dark: #252c42;
-    --secondary-light: #3a39c4;
+    --primary-dark: #252c42;
+    --primary-light: #3a39c4;
+    --secondary-dark: #3B2667;
+    --secondary-light: #BC78EC;
 }
 
 .icon{
-    color: var(--primary-dark);
+    color: var(--primary-light);
 }
 
 @layer base{
@@ -36,10 +36,10 @@
     }
 
     button {
-        @apply p-3 border bg-gradient-to-br from-[var(--primary-dark)] to-[--primary-light] text-white rounded-md
+        @apply p-3 border bg-gradient-to-br from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-md hover:bg-gradient-to-br hover:from-[var(--secondary-dark)] hover:to-[var(--secondary-light)]
     }
 
     .icon{
-        @apply text-2xl cursor-pointer
+        @apply text-2xl cursor-pointer hover:text-[var(--secondary-light)]
     }
 }
