@@ -39,8 +39,8 @@ const Carousel = () => {
     
     return (
         <div className='max-w-[1240px] mx-auto px-4 py-16 relative flex justify-center items-center'>
-            <BsArrowLeftSquareFill onClick={prevSlide} className='absolute top-[50%] text-3xl text-[#e8c8ff] cursor-pointer left-8 z-10' />
-            <BsArrowRightSquareFill onClick={nextSlide} className='absolute top-[50%] text-3xl text-[#e8c8ff] cursor-pointer right-8 z-10' />
+            <BsArrowLeftSquareFill onClick={prevSlide} className='text-[var(--secondary-light)] hover:text-[var(--secondary-dark)] absolute top-[50%] text-3xl cursor-pointer left-8 z-10' />
+            <BsArrowRightSquareFill onClick={nextSlide} className='text-[var(--secondary-light)] hover:text-[var(--secondary-dark)] absolute top-[50%] text-3xl cursor-pointer right-8 z-10' />
             {sliderData.map((item, index) => (
                 <div key={index} className={index === slide ? 'opacity-100' : 'opacity-0'}>
                     {index === slide && <img className='w-full rounded-md' src={item.url} alt="/" />}

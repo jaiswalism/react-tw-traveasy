@@ -1,6 +1,7 @@
 import React from "react";
-import { RiCustomerService2Fill } from "react-icons/ri";
+import { RiCustomerService2Fill, RiFindReplaceLine } from "react-icons/ri";
 import { MdOutlineTravelExplore } from "react-icons/md";
+import { BiSolidOffer } from "react-icons/bi";
 
 const Search = () => {
   return (
@@ -30,7 +31,7 @@ const Search = () => {
             </button>
             <div>
                 <h3 className="py-2">LEADING SERVICES</h3>
-                <p className="py-1">ALL-INCLUSIVE COMPANY FOR 20 YEARS IN A ROW</p>
+                <p className="py-1 px-2 text-sm">ALL-INCLUSIVE COMPANY FOR 20 YEARS IN A ROW</p>
             </div>
           </div>
           <div className="flex flex-col lg:flex-row items-center text-center">
@@ -39,22 +40,22 @@ const Search = () => {
             </button>
             <div>
                 <h3 className="py-2">LEADING SERVICES</h3>
-                <p className="py-1">ALL-INCLUSIVE COMPANY FOR 20 YEARS IN A ROW</p>
+                <p className="py-1 px-2 text-sm">ALL-INCLUSIVE COMPANY FOR 20 YEARS IN A ROW</p>
             </div>
           </div>
         </div>
       </div>
 
       <div>
-        <div className="border text-center">
+        <div className="border-2 text-center">
             <p className="pt-2">GET AN ADDITIONAL 10% OFF</p>
             <p className="py-4">12 HOURS LEFT</p>
-            <p className="bg-gray-800 text-gray-200 py-2">BOOK NOW AND SAVE</p>
+            <p className="bg-gray-800 text-gray-200 py-2 w-full">BOOK NOW AND SAVE <BiSolidOffer size={20} className="inline-block" /></p>
         </div>
-        <form className="w-full">
+        <form className="w-2/3 lg:w-full flex flex-col mx-auto mt-8 bg-slate-100 px-8 py-4 rounded-lg border">
             <div className="flex flex-col my-2">
-                <label>Destination</label>
-                <select className="border rounded-md p-2">
+                <label className="font-semibold">Destination</label>
+                <select className="border-2 rounded-md p-2 hover:border-[var(--primary-light)]">
                     <option value="">Grande Antiqua</option>
                     <option value="">Key West</option>
                     <option value="">Maldives</option>
@@ -62,14 +63,14 @@ const Search = () => {
                 </select>    
             </div>
             <div className="flex flex-col my-4">
-                <label>Check-In</label>
-                <input className="border rounded-md p-2" type="date" />
+                <label className="font-semibold">Check-In</label>
+                <input className="border-2 rounded-md p-2 hover:border-[var(--primary-light)]" type="date" />
             </div>
             <div className="flex flex-col my-2">
-                <label>Check-Out</label>
-                <input className="border rounded-md p-2" type="date" />
+                <label className="font-semibold">Check-Out</label>
+                <input className="border-2 rounded-md p-2 hover:border-[var(--primary-light)]" type="date" />
             </div>
-            <button className="w-full ny-4">Rates & Availabilties</button>
+            <button className="w-3/5 lg:w-full my-4 mx-auto rounded-full lg:rounded-md">Rates & Availabilties <RiFindReplaceLine className="inline-block" size={20}/></button>
         </form>
       </div>
     </div>

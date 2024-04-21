@@ -41,7 +41,7 @@ const Footer = () => {
 
         <div className="flex py-6 justify-between px-4">
             <p className="font-semibold text-sm text-[var(--secondary-dark)]">Made by Shyam Jaiswal</p>
-            <a href="https://github.com/jaiswalism"><FaGithub size={25} className="icon" /></a> 
+            <a target="_blank" rel="noreferrer" href="https://github.com/jaiswalism"><FaGithub size={25} className="icon" /></a> 
         </div>
 
       </div>
