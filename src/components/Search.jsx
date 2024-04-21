@@ -52,7 +52,7 @@ const Search = () => {
             <p className="py-4">12 HOURS LEFT</p>
             <p className="bg-gray-800 text-gray-200 py-2 w-full">BOOK NOW AND SAVE <BiSolidOffer size={20} className="inline-block" /></p>
         </div>
-        <form className="w-2/3 lg:w-full flex flex-col mx-auto mt-8 bg-slate-100 px-8 py-4 rounded-lg border">
+        <form className="w-full sm:w-2/3 lg:w-full flex flex-col mx-auto mt-8 bg-slate-100 px-8 py-4 rounded-lg border">
             <div className="flex flex-col my-2">
                 <label className="font-semibold">Destination</label>
                 <select className="border-2 rounded-md p-2 hover:border-[var(--primary-light)]">
@@ -64,13 +64,13 @@ const Search = () => {
             </div>
             <div className="flex flex-col my-4">
                 <label className="font-semibold">Check-In</label>
-                <input className="border-2 rounded-md p-2 hover:border-[var(--primary-light)]" type="date" />
+                <input className="w-full border-2 rounded-md p-2 hover:border-[var(--primary-light)]" type="date" />
             </div>
             <div className="flex flex-col my-2">
                 <label className="font-semibold">Check-Out</label>
-                <input className="border-2 rounded-md p-2 hover:border-[var(--primary-light)]" type="date" />
+                <input className="w-full border-2 rounded-md p-2 hover:border-[var(--primary-light)]" type="date" />
             </div>
-            <button className="w-3/5 lg:w-full my-4 mx-auto rounded-full lg:rounded-md">Rates & Availabilties <RiFindReplaceLine className="inline-block" size={20}/></button>
+            <button className="w-full md:w-3/5 lg:w-full my-4 mx-auto rounded-full lg:rounded-md">Rates & Availabilties <RiFindReplaceLine className="inline-block" size={20}/></button>
         </form>
       </div>
     </div>
